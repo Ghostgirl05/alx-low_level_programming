@@ -3,7 +3,6 @@
 
 /**
  * main - Entry point
- *
  * Return: Always 0 (Success)
  */
 int main(void)
@@ -19,7 +18,7 @@ int main(void)
 				while (x < 58)
 				{
 					putchar(p);
-					ptchar(q);
+					putchar(q);
 					putchar(' ');
 					putchar(y);
 					putchar(x);
