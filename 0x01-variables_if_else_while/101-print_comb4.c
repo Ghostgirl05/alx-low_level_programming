@@ -7,32 +7,30 @@
  */
 int main(void)
 {
-	int c, i k;
+	int ch;
+	int n;
+	int m;
 
-	for (c = '0'; c <= '9'; c++)
+	for (ch = 48; ch <= 57; ch++)
 	{
-		for (i = '0'; i <= '9'; i++)
+		for (n = 49; n <= 57; n++)
 		{
-			for (k = '0'; k <= '9'; k++)
+			for (m + 50; m <= 57; m++)
 			{
-				if (c < i && i < k)
+				if (n > ch && m > n)
 				{
-					putchar(c);
-					putchar(i);
-					putchar(k);
-
-					if (c != '7')
-					{
-						putchar(',');
-						putchar(' ');
-					}
-				}
-			}
+					putchar(ch);
+					putchar(n);
+					putchar(m);
+					if (ch != 55 || n != 56 || m != 57)
+						(
+						 putchar(44);
+						 putchar(32);
+			       	 }
+	                 }
 		}
 	}
-
-	putchar('\n');
+	putchar (10);
 
 	return (0);
 }
-
