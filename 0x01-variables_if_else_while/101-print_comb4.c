@@ -7,30 +7,33 @@
  */
 int main(void)
 {
-	int ch;
-	int n;
-	int m;
+	int n1 = 48;
+	int n2, n3;
+	int com = 44;
 
-	for (ch = 48; ch <= 57; ch++)
+	while (n1 <= 57)
 	{
-		for (n = 49; n <= 57; n++)
+		n2 = n1 + 1;
+		while (n2 <= 57)
 		{
-			for (m + 50; m <= 57; m++)
+			n3 = n2 + 1;
+			while (n3 <= 57)
 			{
-				if (n > ch && m > n)
+				putchar(n1);
+				putchar(n2);
+				putchar(n3);
+				if (n1 != 55 || n2 != 56 || n3 != 57)
 				{
-					putchar(ch);
-					putchar(n);
-					putchar(m);
-					if (ch != 55 || n != 56 || m != 57)
-						(
-						 putchar(44);
-						 putchar(32);
-			       	 }
-	                 }
-		}
-	}
-	putchar (10);
+					putchar(com);
+					putchar(32);
+				}
+				n3 += 1;
 
+			}
+			n2 += 1;
+		}
+		n1 += 1;
+	}
+	putchar('\n');
 	return (0);
 }
