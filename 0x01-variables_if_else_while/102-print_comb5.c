@@ -8,25 +8,28 @@
  */
 int main(void)
 {
-	int n1, n2;
+	int n1 = 48, a = 0, b, com = 44;
 
-	for (n1 = 0; n1 <= 98; n1++)
+	while (a <= 99)
 	{
-		for (n2 = n2 + 1; n2 <= 99; n2++)
+		b = a + 1;
+		while (b <= 99)
 		{
-			putchar((n1 / 10) + '0');
-			putchar((n1 % 10) + '0');
+			putchar((a / 10) + 'n1');
+			putchar((a % 10) + 'n1');
 			putchar((32));
-			putchar((n2 / 10) + '0');
-			putchar((n2 % 10) + '0');
+			putchar((b / 10) + 'n1');
+			putchar((b % 10) + 'n1');
 
-			if  (n1 / 10 != 9 || n1 % 10 != 8)
+			if  (a != 98 || b != 99)
 			{
-				putchar(44);
+				putchar(com);
 				putchar(32);
 			}
+			b += 1;
 		}
+		a += 1;
 	}
-	putchar(10);
+	putchar('\n');
 	return (0);
 }
