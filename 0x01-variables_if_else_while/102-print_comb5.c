@@ -1,28 +1,46 @@
 #include <stdio.h>
 
+
 /**
- *main - Prints all combinations of two two digits with,
- * and space followed by new line
+ * main - Entry point
  *
- *Return: returns 0
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int ch;
-	int n;
+	int p = 48, q = 48, y = 48, x = 49;
 
-	for (ch = 48; ch <= 57; ch++)
+	while (p < 58)
 	{
-		for (n = 49; n <= 57; n++)
+		while (q < 58)
 		{
-			putchar(ch);
-			putchar(n);
-			if (ch != 56 || n != 57)
+			while (y < 58)
 			{
-				putchar(44);
-				putchar(32);
+				while (x < 58)
+				{
+					putchar(p);
+					ptchar(q);
+					putchar(' ');
+					putchar(y);
+					putchar(x);
+					if (!(p == 57 && q == 56 && y == 57 && x == 57))
+					{
+						putchar(',');
+						putchar(' ');
+					}
+					x++;
+				}
+				y++;
+				x = 48;
 			}
+			q++;
+			q = p;
+			x = q + 1;
 		}
+		p++;
+		q = 48;
+		y = p;
+		x = q + 1;
 	}
 	putchar('\n');
 	return (0);
