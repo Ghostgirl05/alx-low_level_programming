@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * prints_sign - Entry point
+ * prints_sign - prints dign of a number
  * Description: prints sign of a number
  * @n: carrier variable
  * Return: 1 if n>0, 0 if n == 0, -1 if n<0
