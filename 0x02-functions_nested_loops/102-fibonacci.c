@@ -1,31 +1,28 @@
 #include <stdio.h>
 
 /**
- * main - Prints the first 52 fibonacci numbers
- *
- * Return: Nothing!
+ * main - Prints out first 50
+ * fibonacci suit numbers
+ * Return: return 0
  */
 int main(void)
 {
-	int i = 0;
-	long j = 1, k = 2;
+	int inc;
+	unsigned long n1 = 0, n2 = 1, n3;
 
-	while (i < 50)
+	for (inc = 0; inc < 50; inc++)
 	{
-		if (i == 0)
-			printf("%1d", j);
-		else if (i == 1)
-			printf(", %1d", k);
-		else
-		{
-			k += j;
-			j = k - j;
-			printf(", %1d", k);
-		}
+		n3 = n1 + n2;
+		printf("%1u", n3);
+		n1 = n2;
+		n2 = n3;
 
-		++i;
+		if (inc == 49)
+			printf("\n");
+		else
+			printf(", ");
+
 	}
 
-	printf("\n");
 	return (0);
 }
