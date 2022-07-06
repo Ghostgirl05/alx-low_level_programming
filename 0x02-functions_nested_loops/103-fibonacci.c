@@ -19,6 +19,6 @@ int main(void)
 			sum += n1;
 
 	}
-	printf("%1zu\n", sum);
+	printf("%i\n", sum);
 	return (0);
 }
