@@ -7,22 +7,22 @@
  */
 int main(void)
 {
-	int inc;
-	unsigned long n1 = 0, n2 = 1, n3;
+	unsigned long count, i, j, k;
 
-	for (inc = 0; inc < 50; inc++)
+	i = 0;
+	j = 1;
+	for (count = 0; count < 50; count++)
 	{
-		n3 = n1 + n2;
-		printf("%1u", n3);
-		n1 = n2;
-		n2 = n3;
-
-		if (inc == 49)
-			printf("\n");
+		k = i + j;
+		i = j;
+		j = k;
+		printf("%1u", k);
+		if (count == 49)
+			putchar('\n');
 		else
-			printf(", ");
-
+		{
+		printf(", ");
+		}
 	}
-
 	return (0);
 }
