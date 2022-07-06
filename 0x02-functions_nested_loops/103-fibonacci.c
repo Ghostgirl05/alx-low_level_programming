@@ -1,10 +1,12 @@
 #include <stdio.h>
+
 /**
- * main - prints the sum of even fibonacci
- * suit elements
- * fibonacci suit numbers
- * Return: return 0
+ *main - prints sum of even fibonacci
+ *suit elements
+ *fibonacci suit numbers
+ *Return: return 0
  */
+
 int main(void)
 {
 	unsigned long n1 = 0, n2 = 1, n3 = 0, sum = 0;
@@ -19,6 +21,6 @@ int main(void)
 			sum += n1;
 
 	}
-	printf("%1i\n", sum);
+	printf("%ld\n", sum);
 	return (0);
 }
